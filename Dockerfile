@@ -5,8 +5,8 @@ ENV TERM linux
 
 RUN apt-get -qq update; apt-get -qqy install openjdk-7-jre-headless unzip
 
-ADD https://github.com/validator/validator.github.io/releases/download/20140222/vnu-20140222.zip /opt/
-RUN unzip -d /opt /opt/vnu-20140222.zip
+ADD https://github.com/validator/validator/releases/download/20150216/vnu-20150216.jar.zip /opt/
+RUN unzip -d /opt /opt/vnu-20150216.jar.zip
 
 USER nobody
 WORKDIR /opt/vnu
